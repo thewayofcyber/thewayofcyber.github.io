@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.enso-icon {
+  width: 50px;
+  height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  margin-top: 80px;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.left-pane, .right-pane {
+  padding: 2rem;
+}
+
+.left-pane {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-pane {
+  width: 40%;
+  text-align: center;
+}
+
+.large-header {
+  font-size: 350%;
+  margin-bottom: 0.6em;
+}
+
+.regular-text {
+  font-size: 150%;
+  margin-bottom: 0.3em;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 0.75rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #444;
+}
+
+.footer {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.custom-audio-player {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#playPauseBtn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+}
+
+#playPauseBtn:hover {
+  background-color: #444;
+}
+
+#waveform-container {
+  width: 60%;
+  margin: 1rem auto;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .left-pane,
+  .right-pane {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #waveform-container {
+    width: 90%;
+  }
+}
